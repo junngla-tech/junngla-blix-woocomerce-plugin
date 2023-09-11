@@ -32,17 +32,6 @@ function blix_init()
 
         public function __construct()
         {
-
-            if (!function_exists('array_is_list')) {
-                function array_is_list(array $arr)
-                {
-                    if ($arr === []) {
-                        return true;
-                    }
-                    return array_keys($arr) === range(0, count($arr) - 1);
-                }
-            }
-		  
             $this->id = 'blix';
             $this->icon = apply_filters('woocommerce_blix_icon', plugin_dir_url('') . 'Blix/blix_logo.png');
             $this->order_button_text = __('Pagar en Blix', 'woocommerce');
