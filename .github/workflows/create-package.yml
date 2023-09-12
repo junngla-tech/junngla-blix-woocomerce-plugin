@@ -31,18 +31,14 @@ jobs:
 
             ## Instalación 
 
-            <details>
               <p>1. Descargar "junngla-blix-woocomerce-plugin.zip"</p>
               <p>2. Subir he instalar mediante wordpress</p>
               <p>3. Active el plugin a través del menú 'Plugin' en WordPress.</p>
               <p>4. Ir a Woocommerce -> Configuraciones y seleccionar Pagos.</p>
-            </details>
 
             ## Configuración
 
-            <details>
               <p>1. Añadir Titulo que se mostrara al cliente al momento de presentar el medio de pago en el formulario de compra.</p>
               <p>2. Añadir URL Blix a la cual se redireccionara al cliente cuando decida pagar.</p>
               <p>3. Añadir Llave de medio de pago correspondiente a tu comercio, con el cual Blix te identificara.</p>
               <p>4. Añadir Secret de pago.</p>
-            </details>
