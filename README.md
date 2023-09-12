@@ -12,13 +12,13 @@
 <p align="center">
   <a href="#Descarga">Descarga</a> •
   <a href="#Descarga">Instalacion</a> •
-  <a href="#Configuración">Configuracion</a> •
+  <a href="#Configuración">Configuracion</a>
 </p>
 
-<div style="display: flex;align-content: center;justify-content: center">
+<p align="center">
 
 ![screenshot](./screenshot/qr-blix.png)
-</div>
+</p>
 
 ## Descarga
 
@@ -66,8 +66,3 @@ Configurar Gateway:
 
 ![screenshot](./screenshot/wordpress-step-4.png)
 </div>
-
-
-## License
-
-GPL2
