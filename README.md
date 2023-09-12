@@ -15,10 +15,9 @@
   <a href="#Configuración">Configuracion</a>
 </p>
 
-<p align="center">
-
-![screenshot](./screenshot/qr-blix.png)
-</p>
+<div style="display: flex;align-content: center;justify-content: center">
+    <img src ="./screenshot/qr-blix.png" alt="QR Redpay"/>
+</div>
 
 ## Descarga
 
