@@ -20,7 +20,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          artifacts: "*.zip"
+          artifacts: 'junngla-blix-woocomerce-plugin.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             # Junngla Blix (Plugin woocommerce)
