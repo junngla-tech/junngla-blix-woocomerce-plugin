@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Create zip package
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
         uses: thedoctor0/zip-release@0.7.1
         with:
           type: 'zip'
-          filename: 'release.zip'
+          filename: 'junngla-blix-woocomerce-plugin.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 
       - name: Create Release
@@ -29,26 +29,20 @@ jobs:
 
             ${{ steps.tag_data.outputs.git-tag-annotation || '<< empty git-tag-annotation >>' }}
 
-            ## Instalar la imagen en un servidor
+            ## Instalación 
 
-            <details><summary>Ambientes: dev / qa / test / prod</summary>
-            <p>
-
-            ```shell
-            ${{ env.SHELL_INSTALL }}
-            ```
-
-            </p>
+            <details>
+              <p>1. Descargar "junngla-blix-woocomerce-plugin.zip"</p>
+              <p>2. Subir he instalar mediante wordpress</p>
+              <p>3. Active el plugin a través del menú 'Plugin' en WordPress.</p>
+              <p>4. Ir a Woocommerce -> Configuraciones y seleccionar Pagos.</p>
             </details>
 
-            ## Iniciar el servicio en un servidor
+            ## Configuración
 
-            <details><summary>Ambiente:  dev / qa / test / prod</summary>
-            <p>
-
-            ```shell
-            ${{ env.SHELL_RUN }}
-            ```
-
-            </p>
+            <details>
+              <p>1. Añadir Titulo que se mostrara al cliente al momento de presentar el medio de pago en el formulario de compra.</p>
+              <p>2. Añadir URL Blix a la cual se redireccionara al cliente cuando decida pagar.</p>
+              <p>3. Añadir Llave de medio de pago correspondiente a tu comercio, con el cual Blix te identificara.</p>
+              <p>4. Añadir Secret de pago.</p>
             </details>
