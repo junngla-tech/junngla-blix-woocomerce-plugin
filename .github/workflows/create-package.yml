@@ -5,19 +5,13 @@ on:
     tags:
       - "*.*.*"
 jobs:
-  zip-files:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      # create a Zip package from files in the "reports" folder; create package in "packaging" folder
-      - name: Create a Zip package 🐙
-        uses: OctopusDeploy/create-zip-package-action@v3
+      - uses: actions/checkout@master
+      - name: Archive Release
+        uses: thedoctor0/zip-release@0.7.1
         with:
-          package_id: 'DemoPackage'
-          version: '1.0.0'
-          output_folder: './'
-          package_filename: 'blix'
-          base_path: /
-          files: |
-            **/*.*
+          type: 'zip'
+          filename: 'release.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
