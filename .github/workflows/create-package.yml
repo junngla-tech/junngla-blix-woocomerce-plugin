@@ -21,6 +21,7 @@ jobs:
         with:
           allowUpdates: true
           artifacts: 'junngla-blix-woocomerce-plugin.zip'
+          removeArtifacts: '*.tar.gz, release.zip, 1.0.0.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             # Junngla Blix (Plugin woocommerce)
