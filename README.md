@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="#Descarga">Descarga</a> •
-  <a href="#Descarga">Instalacion</a> •
+  <a href="#Instalacion">Instalacion</a> •
   <a href="#Configuración">Configuracion</a>
 </p>
 
@@ -21,7 +21,7 @@
 
 ## Instalacion
 
-* importante!, este plugin trabaja en conjunto con woocommerce, por lo tanto es necesario tener instalado woocommerce antes de poder iniciar la esta configuracion.
+* Importante!, este plugin trabaja en conjunto con woocommerce, por lo tanto es necesario tener instalado woocommerce antes de poder iniciar la esta configuracion.
 
 1. Ingresar al dashboard de wordpress ir a la seccion de "Plugin" y "Agregar un nuevo" y seleccionar "junngla-blix-woocomerce-plugin.zip".
 
