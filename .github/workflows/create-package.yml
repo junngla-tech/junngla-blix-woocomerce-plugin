@@ -13,14 +13,14 @@ jobs:
         uses: thedoctor0/zip-release@0.7.1
         with:
           type: 'zip'
-          filename: 'junngla-blix-woocomerce-plugin.zip'
+          filename: 'junngla-blix-woocommerce-plugin.zip'
           exclusions: '*.tar.gz, *.git* /*node_modules/* .editorconfig'
 
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          artifacts: 'junngla-blix-woocomerce-plugin.zip'
+          artifacts: 'junngla-blix-woocommerce-plugin.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             # Junngla Blix (Plugin woocommerce)

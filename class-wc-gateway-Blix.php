@@ -33,7 +33,7 @@ function blix_init()
         public function __construct()
         {
             $this->id = 'blix';
-            $this->icon = apply_filters('woocommerce_blix_icon', plugin_dir_url('') . 'Blix/blix_logo.png');
+            $this->icon = apply_filters('woocommerce_blix_icon', plugin_dir_url('') . 'blix_logo.png');
             $this->order_button_text = __('Pagar en Blix', 'woocommerce');
             $this->method_title = __('Blix', 'woocommerce');
             $this->notify_url = WC()->api_request_url('wc_gateway_blix');
