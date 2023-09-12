@@ -10,9 +10,9 @@
 <h4 align="center">Instructivo de Configuracion he instalacion</h4>
 
 <p align="center">
-  <a href="#Download">Descarga</a> •
-  <a href="#how-to-use">Instalacion</a> •
-  <a href="#configuration">Configuracion</a> •
+  <a href="#Descarga">Descarga</a> •
+  <a href="#Descarga">Instalacion</a> •
+  <a href="#Configuración">Configuracion</a> •
 </p>
 
 <div style="display: flex;align-content: center;justify-content: center">
