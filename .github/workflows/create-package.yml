@@ -15,3 +15,40 @@ jobs:
           type: 'zip'
           filename: 'release.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          artifacts: "*.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            # Junngla Blix (Plugin woocommerce)
+
+            Changelog:
+
+            ${{ steps.tag_data.outputs.git-tag-annotation || '<< empty git-tag-annotation >>' }}
+
+            ## Instalar la imagen en un servidor
+
+            <details><summary>Ambientes: dev / qa / test / prod</summary>
+            <p>
+
+            ```shell
+            ${{ env.SHELL_INSTALL }}
+            ```
+
+            </p>
+            </details>
+
+            ## Iniciar el servicio en un servidor
+
+            <details><summary>Ambiente:  dev / qa / test / prod</summary>
+            <p>
+
+            ```shell
+            ${{ env.SHELL_RUN }}
+            ```
+
+            </p>
+            </details>
