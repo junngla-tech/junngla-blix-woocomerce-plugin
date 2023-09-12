@@ -7,17 +7,13 @@
   <br>
 </h1>
 
-<h4 align="center">Instructivo de Configuracion he instalacion</h4>
+<h4 align="center">Instructivo</h4>
 
 <p align="center">
   <a href="#Descarga">Descarga</a> •
   <a href="#Descarga">Instalacion</a> •
   <a href="#Configuración">Configuracion</a>
 </p>
-
-<div style="display: flex;align-content: center;justify-content: center">
-    <img src ="./screenshot/qr-blix.png" alt="QR Redpay"/>
-</div>
 
 ## Descarga
 
