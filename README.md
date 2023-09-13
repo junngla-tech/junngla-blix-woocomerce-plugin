@@ -12,7 +12,7 @@
 <p align="center">
   <a href="#Descarga">Descarga</a> •
   <a href="#Instalacion">Instalacion</a> •
-  <a href="#Configuración">Configuracion</a>
+  <a href="#Configuracion">Configuracion</a>
 </p>
 
 ## Descarga
@@ -45,7 +45,7 @@
 </div>
 
 
-## Configuración
+## Configuracion
 
 Configurar Gateway:
 
