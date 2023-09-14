@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Blix
  * Plugin URI: http://www.junngla.com
- * Description: Plugin de procesos de pagos para Blix para woocomerce 2.x.
+ * Description: Plugin de procesos de pagos para Blix para woocommerce 2.x.
  * Version: 1.0
  * Author: Junngla
  * Author URI: http://www.junngla.com

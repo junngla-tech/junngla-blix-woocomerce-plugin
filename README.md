@@ -2,7 +2,7 @@
   <br>
   <img src="blix_logo.png" alt="Blix" width="200">
   <br>
-  Plugin Woocomerce
+  Plugin Woocommerce
   <br>
 </h1>
 
