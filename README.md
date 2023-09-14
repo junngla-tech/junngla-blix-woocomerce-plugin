@@ -1,7 +1,22 @@
 
+<style>
+body {
+  margin: auto;
+  padding: 50px;
+  font-family: 'Arial', sans-serif; 
+  color: #33475b;    
+}
+
+/* Centered Image Code */
+
+img #footer{
+  display: block;
+  margin: auto;
+}
+</style>
 <h1 align="center">
   <br>
-  <img src="blix_logo.png" alt="Markdownify" width="200">
+  <img src="blix_logo.png" alt="Blix" width="200">
   <br>
   Plugin Woocomerce
   <br>
@@ -10,54 +25,59 @@
 <h4 align="center">Instructivo</h4>
 
 <p align="center">
-  <a href="#Descarga">Descarga</a> •
-  <a href="#Instalacion">Instalacion</a> •
+  <a href="#Requisitos">Requisitos</a> •
   <a href="#Configuracion">Configuracion</a>
 </p>
 
-## Descarga
+<a name="Requisitos"><h3>Requisitos</h3></a>
 
-* Para poder obtener la ultima version estable, descarga el archivo "junngla-blix-woocomerce-plugin.zip", que se encuentra en la seccion de release del repositorio.
+<p>Para poder habilitar el método de pago &laquo; <i>RedPay by Blix</i> &raquo; debes cumplir con los siguientes requisitos:</p>
+      <ol>
+        <li>Tener Wordpress instalado.</li>
+        <li>Tener el plugin de WooCommerce instalado.</li>
+      </ol>
 
-## Instalacion
+<a name="Configuracion"><h3>Configuración</h3></a>
 
-* Importante!, este plugin trabaja en conjunto con woocommerce, por lo tanto es necesario tener instalado woocommerce antes de poder iniciar la esta configuracion.
+<p><strong>1.</strong> Descarga el plugin Wordpress de Blix en el siguiente enlace: 
+<br>
+<a href="https://github.com/junngla-tech/junngla-blix-woocommerce-plugin/releases" target="_blank" rel="noopener">https://github.com/junngla-tech/junngla-blix-woocommerce-plugin/releases</a>.</p>
+      <div>
+        <img src="./screenshot/wordpress-step-1.png" width="760px" height="500px" alt="XXX">
+      </div>
 
-1. Ingresar al dashboard de wordpress ir a la seccion de "Plugin" y "Agregar un nuevo" y seleccionar "junngla-blix-woocomerce-plugin.zip".
+<p><strong>2.</strong> Ingresa al panel de administración de tu tienda Wordpress y en el menu principal, selecciona &laquo; <i>Agregar nuevo</i> &raquo; en la sección  &laquo; <i>Plugins</i> &raquo; para poder configurar un nuevo método de pago.</p>
+      <div>
+        <img src="./screenshot/wordpress-step-2.png" width="317px" height="279px" alt="XXX">
+      </div>
 
-<div style="display: flex;align-content: center;justify-content: center">
+<p><strong>3.</strong> Seleccionar el archivo &laquo; <i>junngla-blix-woocommerce-plugin.zip</i> &raquo; descargado anteriormente.</p>
+      <div>
+        <img src="./screenshot/wordpress-step-3.png" width="736px" height="208px" alt="XXX">
+      </div>
 
-![screenshot](./screenshot/wordpress-step-1.png)
-</div>
+<p><strong>4.</strong> Una vez instalado el plugin deberá activarlo.</p>
 
-2. Active el plugin, al momento de instalar o a través del menú 'Plugin instalados' en WordPress.
+<div>
+        <img src="./screenshot/wordpress-step-4.png" width="618px" height="256px" alt="XXX">
+      </div>
 
-<div style="display: flex;align-content: center;justify-content: center">
+<p><strong>5.</strong> Una vez instalado y activado el plugin, desde el menu principal selecciona &laquo; <i>Ajustes</i> &raquo; que encontraras dentro del menu de &laquo; <i>WooCommerce</i> &raquo;. En la pestaña de &laquo; <i>Pagos</i> &raquo;, debes de gestionar y habilitar el medio de pago &laquo; <i>RedPay by Blix</i> &raquo;.</p>
+      <div>
+        <img src="./screenshot/wordpress-step-5.png" width="1140px" height="517px" alt="XXX">
+      </div>
 
-![screenshot](./screenshot/wordpress-step-2.png)
-</div>
+<p><strong>6.</strong> A continuación deberá rellenar el formulario con la siguiente información:</p>
+      <ul>
+        <li><strong>Nombre:</strong> RedPay by Blix</li>
+        <li><strong>Url del método de pago:</strong> https://api.blix.global/woocommerce/init-transaction</li>
+        <li><strong>Llave de medio de pago:</strong> Ingresa aquí el valor &laquo; <i>Client ID</i> &raquo; presente en la parte superior de está página.</li>
+        <li><strong>Secreto de medio de pago:</strong> Ingresa aquí el valor &laquo; <i>Secreto</i> &raquo; presente en la parte superior de está página.</li>
+      </ul>
+      <div>
+        <img src="./screenshot/wordpress-step-6.png" width="812px" height="411px" alt="XXX">
+      </div>
 
-3. Una vez instalado, desde el menu principal selecciona "Ajustes" que encontraras dentro del menu de "Woocommerce", en la pestaña de "Pagos", debes de gestionar y habilitar el medio de pago Blix.
+<p><strong>7.</strong> Tu nuevo método de pago se encuentra listo para ser usado.</p>
 
-<div style="display: flex;align-content: center;justify-content: center">
-
-![screenshot](./screenshot/wordpress-step-3.png)
-</div>
-
-
-## Configuracion
-
-Configurar Gateway:
-
-* Añadir Titulo que se mostrara al cliente al momento de presentar el medio de pago en el formulario de compra.
-
-* Añadir URL Blix a la cual se redireccionara al cliente cuando decida pagar.
-
-* Añadir Llave de medio de pago correspondiente a tu comercio, con el cual Blix te identificara.
-
-* Añadir Secret de pago.
-
-<div style="display: flex;align-content: center;justify-content: center">
-
-![screenshot](./screenshot/wordpress-step-4.png)
-</div>
+<p align="center">-- El equipo Blix 🌎 --</p>

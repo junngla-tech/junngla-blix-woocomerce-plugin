@@ -1,0 +1,9 @@
+/sonar-project.properties
+/.scannerwork/.sonar_lock
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/php.xml
+/.scannerwork/report-task.txt
+/.idea/sonarlint.xml
+/.idea/vcs.xml
