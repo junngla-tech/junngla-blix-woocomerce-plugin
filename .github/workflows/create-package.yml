@@ -5,6 +5,30 @@ on:
     tags:
       - "*.*.*"
 jobs:
+  sonarqube:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/') && !endsWith(github.ref, '-dev')
+    steps:
+      - name: Comprobar el tag -dev
+        run: |
+          echo "Este trabajo se ejecuta para un tag que no termina en -dev."
+      - name: Checking out
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+      - name: SonarQube Scan
+        uses: kitabisa/sonarqube-action@v1.2.0
+        with:
+          host: https://sonarqube.junngla.com/
+          login: ${{ secrets.SONARQUBE_TOKEN }}
+      - name: Send Notification
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: |
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
+          TAG_NAME=$(echo "${{ github.ref }}" | sed 's/refs\/tags\///')
+          curl -X POST --data-urlencode "payload={\"channel\": \"#deploy\", \"username\": \"Deploy Nuevo TAG\", \"text\": \"Tenemos una nueva versión del contenedor $REPO_NAME, y su versión es: $TAG_NAME\", \"icon_emoji\": \":rocket:\"}" https://hooks.slack.com/services/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
+    
   build:
     runs-on: ubuntu-latest
     steps:
