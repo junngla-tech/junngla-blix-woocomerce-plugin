@@ -27,7 +27,7 @@ jobs:
         run: |
           REPO_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
           TAG_NAME=$(echo "${{ github.ref }}" | sed 's/refs\/tags\///')
-          curl -X POST --data-urlencode "payload={\"channel\": \"#deploy\", \"username\": \"Deploy Nuevo TAG\", \"text\": \"Tenemos una nueva versión del contenedor $REPO_NAME, y su versión es: $TAG_NAME\", \"icon_emoji\": \":rocket:\"}" https://hooks.slack.com/services/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
+          curl -X POST --data-urlencode "payload={\"channel\": \"#deploy\", \"username\": \"Deploy Nuevo TAG\", \"text\": \"Tenemos una nueva versión del contenedor $REPO_NAME, y su versión es: $TAG_NAME\", \"icon_emoji\": \":rocket:\"}" https://hooks.slack.com/services/T0575UENNM8/${{ secrets.WEBHOOK_URL }}
     
   build:
     runs-on: ubuntu-latest
