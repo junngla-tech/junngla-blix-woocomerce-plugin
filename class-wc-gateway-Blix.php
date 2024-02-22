@@ -108,7 +108,7 @@ function blixInit()
                         'El URL donde proveemos información sobre tus pedidos a la cuenta de merchant.',
                         'woocommerce'
                     ),
-                    'default' => __('https://api.blix.global/woocommerce/init-transaction', 'woocommerce'),
+                    'default' => __('https://api.cobrar.blix.global/woocommerce/init-transaction', 'woocommerce'),
                     'desc_tip' => true,
                 ),
                 'merchantID' => array(
