@@ -35,7 +35,7 @@ function blixInit()
             $this->id = 'blix';
             $this->icon = apply_filters(
                 'woocommerce_blix_icon',
-                plugin_dir_url('') . 'junngla-blix-woocommerce-plugin/blix_logo.png'
+                plugin_dir_url('') . 'junngla-blix-woocommerce-plugin/RP_COLOR_H.png'
             );
             $this->order_button_text = __('Pagar en Blix', 'woocommerce');
             $this->method_title = __('RedPay by Blix', 'woocommerce');
