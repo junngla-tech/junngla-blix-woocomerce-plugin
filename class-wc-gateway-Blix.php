@@ -3,7 +3,7 @@
  * Plugin Name: Blix
  * Plugin URI: http://www.junngla.com
  * Description: Plugin de procesos de pagos para Blix para woocommerce 2.x.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Junngla
  * Author URI: http://www.junngla.com
  * License: GPL2
@@ -35,7 +35,7 @@ function blixInit()
             $this->id = 'blix';
             $this->icon = apply_filters(
                 'woocommerce_blix_icon',
-                plugin_dir_url('') . 'junngla-blix-woocommerce-plugin/blix_logo.png'
+                plugin_dir_url('') . 'junngla-blix-woocommerce-plugin/RP_COLOR_H.png'
             );
             $this->order_button_text = __('Pagar en Blix', 'woocommerce');
             $this->method_title = __('RedPay by Blix', 'woocommerce');
