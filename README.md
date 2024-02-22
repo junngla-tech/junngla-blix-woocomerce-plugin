@@ -54,7 +54,7 @@
 <p><strong>6.</strong> A continuación deberá rellenar el formulario con la siguiente información:</p>
       <ul>
         <li><strong>Nombre:</strong> RedPay by Blix</li>
-        <li><strong>Url del método de pago:</strong> https://api.blix.global/woocommerce/init-transaction</li>
+        <li><strong>Url del método de pago:</strong> https://api.cobrar.blix.global/woocommerce/init-transaction</li>
         <li><strong>Llave de medio de pago:</strong> Ingresa aquí el valor &laquo; <i>Client ID</i> &raquo; presente en la parte superior de está página.</li>
         <li><strong>Secreto de medio de pago:</strong> Ingresa aquí el valor &laquo; <i>Secreto</i> &raquo; presente en la parte superior de está página.</li>
       </ul>
